@@ -1,5 +1,7 @@
 ---
-arkservertools_url: "https://github.com/arkmanager/ark-server-tools/archive/refs/tags/v1.6.61a.tar.gz"
+arkservertools_version: 1.6.61a
+arkservertools_url: "https://github.com/arkmanager/ark-server-tools/archive/refs/tags/{{ arkservertools_version }}.tar.gz"
+
 arkservertools_user: "{{ steamcmd_user }}"
 arkservertools_user_homedir: "{{ steamcmd_user_homedir }}"
 
