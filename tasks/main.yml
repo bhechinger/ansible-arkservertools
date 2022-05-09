@@ -39,7 +39,7 @@
   notify: restart arkmanager
 
 - name: Install ARK dedicated server
-  command: su -l {{ arkservertools_user }} -c 'arkmanager installi @main'
+  command: su -l {{ arkservertools_user }} -c 'arkmanager install @main'
   args:
     creates: "{{ arkservertools_user_homedir }}/ARK/arkversion"
   async: 3600
