@@ -28,7 +28,7 @@
              creates={{ steamcmd_user_homedir }}/ark-server-tools-master/tools/install.sh
 
 - name: Install ark-server-tools
-  command: "{{ steamcmd_user_homedir }}/ark-server-tools-master/tools/install.sh {{ arkservertools_user }}"
+  command: "{{ steamcmd_user_homedir }}/ark-server-tools-master/tools/install.sh --install-service {{ arkservertools_user }}"
   args:
     chdir: "{{ arkservertools_user_homedir }}/ark-server-tools-master/tools"
     creates: /usr/local/bin/arkmanager
